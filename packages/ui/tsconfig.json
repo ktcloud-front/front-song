@@ -9,11 +9,12 @@
       "DOM.Iterable"
     ],
     "module": "ESNext",
-    "outDir": "dist",
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "emitDeclarationOnly": true,
-    "declaration": true,
+    "declaration": true, // 타입 정의 파일 생성
+    "declarationDir": "dist/types", // 타입 정의 파일이 생성될 경로
+    "outDir": "dist", // 빌드 결과물이 생성될 경로
+    "emitDeclarationOnly": true, // JavaScript 파일은 생성하지 않고 타입 정의 파일만 생성
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
