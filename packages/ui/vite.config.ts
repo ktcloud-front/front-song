@@ -8,9 +8,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'index',
+      name: 'ui',
       formats: ['es', 'cjs'],
-      fileName: (format) => `index.${format}.js`,
+      fileName: (format) => `ui.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

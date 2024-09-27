@@ -10,20 +10,17 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
+  "main": "dist/ui.cjs.js",
+  "module": "dist/ui.es.js",
   "exports": {
     ".": {
-      "require": "./dist/cjs/index.js",
-      "import": "./dist/esm/index.mjs",
-      "types": "./dist/index.d.ts"
-    },
-    "./index.css": "./dist/esm/index.css"
+      "import": "./dist/ui.es.js",
+      "require": "./dist/ui.cjs.js"
+    }
   },
   "dependencies": {
     "eslint": "^8.56.0",
