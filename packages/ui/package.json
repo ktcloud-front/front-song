@@ -14,13 +14,16 @@
     "dist",
     "src"
   ],
-  "main": "dist/ui.cjs.js",
-  "module": "dist/ui.es.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.es",
   "exports": {
     ".": {
-      "import": "./dist/ui.es.js",
-      "require": "./dist/ui.cjs.js"
-    }
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*"
   },
   "dependencies": {
     "eslint": "^8.56.0",
@@ -48,7 +51,8 @@
     "storybook": "^8.3.3",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.2"
   },
   "eslintConfig": {
     "extends": [
