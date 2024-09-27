@@ -1,5 +1,4 @@
 {
-  "extends": "@jaeheesong-ktc/typescript-config/index.json",
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -29,14 +28,15 @@
     "forceConsistentCasingInFileNames": false,
   },
   "include": [
-    "src"
+    "src",
+    ".storybook"
   ],
   "exclude": [
     "dist",
     "build",
     "node_modules",
     ".turbo"
-  ]
+  ],
 }
 
 

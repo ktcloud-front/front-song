@@ -22,5 +22,9 @@ const config: StorybookConfig = {
     name: getAbsolutePath('@storybook/react-vite'),
     options: {},
   },
+  typescript: {
+    reactDocgen: 'react-docgen',  // Storybook에서 TypeScript 지원 설정
+    check: false,                 // tsconfig.json 파일 체크 비활성화
+  }
 }
 export default config
