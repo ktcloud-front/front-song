@@ -16,6 +16,7 @@ jobs:
           node-version: "20"
       - name: Install dependencies
         run: npm install
+      - run: npx tsc --no-emit
       - name: Build
         run: npm run build
       - name: Move Storybook static files
