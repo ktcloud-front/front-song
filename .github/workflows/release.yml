@@ -35,7 +35,7 @@ jobs:
       - name: Find dist
         run: ls
       - name: Find dist2
-        run: ls packages/ui/dist
+        run: cat packages/ui/dist/components
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
