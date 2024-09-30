@@ -1,5 +1,11 @@
 # @jaeheesong-ktc/ui
 
+## 0.6.0
+
+### Minor Changes
+
+- aaa
+
 ## 0.5.0
 
 ### Minor Changes
