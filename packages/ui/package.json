@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "storybook build",
+    "build": "cd packages/ui && tsc -b && vite build && storybook build",
     "build-storybook": "storybook build",
     "build-package": "tsc -b && vite build",
     "lint": "eslint .",
@@ -25,6 +25,7 @@
     }
   },
   "dependencies": {
+    "@jaeheesong-ktc/ui": "^0.15.0",
     "eslint": "^8.56.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

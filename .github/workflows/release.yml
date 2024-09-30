@@ -32,6 +32,8 @@ jobs:
           GH_REGISTRY_TOKEN: ${{ secrets.GH_REGISTRY_TOKEN }}
       - name: Build with Turbo2
         run: npm run build
+      - name: Find dist
+        run: ls packages/ui/dist
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
