@@ -1,2 +1,2 @@
-import * from './text'
-export default Text
+// import { Text ] from './text'
+// export default Text
