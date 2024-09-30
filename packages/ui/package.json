@@ -1,7 +1,7 @@
 {
   "name": "@jaeheesong-ktc/ui",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
@@ -12,16 +12,16 @@
     "preview": "vite preview"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
-  "main": "dist/index.umd.js",
+  "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dis/index.d.ts",
       "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
+      "require": "./dist/index.cjs.js"
     }
   },
   "dependencies": {
