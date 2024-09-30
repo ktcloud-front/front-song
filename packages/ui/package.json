@@ -1,11 +1,11 @@
 {
   "name": "@jaeheesong-ktc/ui",
   "private": false,
-  "version": "0.11.0",
+  "version": "0.12.0",
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && storybook build",
     "build-storybook": "storybook build",
     "build-package": "tsc -b && vite build",
     "lint": "eslint .",
@@ -27,7 +27,8 @@
   "dependencies": {
     "eslint": "^8.56.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vite-tsconfig-paths": "^5.0.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.9.0",
