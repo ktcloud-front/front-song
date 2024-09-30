@@ -1,7 +1,7 @@
 {
   "name": "@jaeheesong-ktc/eslint-config",
   "version": "0.0.0",
-  "private": false,
+  "private": true,
   "main": "index.js",
   "devDependencies": {
     "@vercel/style-guide": "^5.2.0",
