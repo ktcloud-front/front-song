@@ -30,6 +30,7 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": false
   },
+  "types": ["vite/client"],
   "include": [
     "src",
     ".storybook"
