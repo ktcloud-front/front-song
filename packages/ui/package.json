@@ -1,13 +1,13 @@
 {
   "name": "@jaeheesong-ktc/ui",
   "private": false,
-  "version": "0.8.0",
+  "version": "0.9.0",
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "vite build && storybook build",
+    "build": "npm run build-storybook && npm run build-package",
     "build-storybook": "storybook build",
-    "vite-build-lib": "tsc -b && vite build",
+    "build-package": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -66,5 +66,9 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
+  },
+  "volta": {
+    "node": "20.17.0",
+    "npm": "10.8.2"
   }
 }
