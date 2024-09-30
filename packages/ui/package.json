@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "tsc -b && vite build",
+    "build": "storybook build && npm run vite-build-lib",
     "build-storybook": "storybook build",
     "vite-build-lib": "tsc -b && vite build",
     "lint": "eslint .",
