@@ -1,11 +1,11 @@
 {
   "name": "@jaeheesong-ktc/ui",
   "private": false,
-  "version": "0.14.0",
+  "version": "0.15.0",
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "tsc -b && vite build && storybook build",
+    "build": "storybook build",
     "build-storybook": "storybook build",
     "build-package": "tsc -b && vite build",
     "lint": "eslint .",
