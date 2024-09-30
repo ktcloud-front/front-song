@@ -7,5 +7,3 @@ const Text: React.FC<TextProps> = ({ variant = 'p', text }) => {
 
   return <Tag>{text}</Tag>
 }
-
-export default Text
