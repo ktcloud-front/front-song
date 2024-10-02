@@ -1,6 +1,6 @@
 {
-  "name": "@jaeheesong-ktc/eslint-config",
-  "version": "0.0.0",
+  "name": "@ktcloud-front/eslint-config",
+  "version": "0.0.1",
   "private": true,
   "main": "index.js",
   "devDependencies": {

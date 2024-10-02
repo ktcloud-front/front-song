@@ -1,6 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: ['@jaeheesong-ktc/eslint-config/index.js', 'plugin:storybook/recommended'],
+  extends: ['@ktcloud-front/eslint-config/index.js', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: true,

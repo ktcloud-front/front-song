@@ -3,7 +3,7 @@
     "target": "ES2020",
     "useDefineForClassFields": true,
     "paths": {
-      "@jaeheesong-ktc/ui/*": ["./src/*"]
+      "@ktcloud-front/ui/*": ["./src/*"]
     },
     "lib": [
       "ES2020",

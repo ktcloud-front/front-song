@@ -1,7 +1,7 @@
 {
-  "name": "@jaeheesong-ktc/ui",
+  "name": "@ktcloud-front/ui-song",
   "private": false,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
@@ -67,7 +67,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jaeheesong-ktc/poc-front"
+    "url": "https://github.com/ktcloud-front/ui-song"
   },
   "publishConfig": {
     "access": "public",
