@@ -10,6 +10,7 @@ import cssnano from 'cssnano'
 export default defineConfig({
   plugins: [react(), dts({insertTypesEntry: true}), tsconfigPaths()],
   build: {
+    cssCodeSplit: false,
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'ui-design-system',
@@ -31,7 +32,7 @@ export default defineConfig({
       plugins: [
         autoprefixer(), // CSS에 벤더 프리픽스 자동 추가
         cssnano({ preset: 'default' }) // CSS를 최적화하고 압축
-      ]
+      ],
     }
   }
 })
