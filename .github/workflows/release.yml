@@ -32,8 +32,6 @@ jobs:
           GH_REGISTRY_TOKEN: ${{ secrets.GH_REGISTRY_TOKEN }}
       - name: Build with Turbo2
         run: npm run build
-      - name: Find dist2
-        run: cat packages/ui/dist/components/index.d.ts && cat packages/ui/dist/components/button/index.d.ts
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
