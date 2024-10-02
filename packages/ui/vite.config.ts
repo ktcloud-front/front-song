@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 import * as path from 'path'
 import dts from 'vite-plugin-dts'
 import tsconfigPaths from 'vite-tsconfig-paths'
+import autoprefixer from 'autoprefixer'
+import cssnano from 'cssnano'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -24,4 +26,12 @@ export default defineConfig({
       },
     },
   },
+  css: {
+    postcss: {
+      plugins: [
+        autoprefixer(), // CSS에 벤더 프리픽스 자동 추가
+        cssnano({ preset: 'default' }) // CSS를 최적화하고 압축
+      ]
+    }
+  }
 })

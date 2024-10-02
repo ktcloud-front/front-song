@@ -1,7 +1,7 @@
 {
   "name": "@jaeheesong-ktc/ui",
   "private": false,
-  "version": "0.16.1",
+  "version": "0.17.0",
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
@@ -25,6 +25,8 @@
     }
   },
   "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
     "eslint": "^8.56.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
