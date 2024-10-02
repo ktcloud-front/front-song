@@ -30,9 +30,12 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        autoprefixer(), // CSS에 벤더 프리픽스 자동 추가
-        cssnano({ preset: 'default' }) // CSS를 최적화하고 압축
+        require('autoprefixer')(),
+        require('cssnano')({ preset: 'default' })
       ],
+    },
+    modules: {
+      scopeBehaviour: 'global'
     }
   }
 })
