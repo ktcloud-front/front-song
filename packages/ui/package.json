@@ -1,7 +1,7 @@
 {
   "name": "@jaeheesong-ktc/ui",
   "private": false,
-  "version": "0.20.0",
+  "version": "0.21.0",
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
@@ -12,7 +12,8 @@
     "preview": "vite preview"
   },
   "files": [
-    "dist"
+    "dist",
+    "dist/style.css"
   ],
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -28,6 +29,7 @@
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
     "eslint": "^8.56.0",
+    "postcss-nesting": "^13.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "vite-tsconfig-paths": "^5.0.1"
