@@ -10,7 +10,7 @@ import cssnano from 'cssnano'
 export default defineConfig({
   plugins: [react(), dts({insertTypesEntry: true}), tsconfigPaths()],
   build: {
-    cssCodeSplit: false,
+    cssCodeSplit: true,
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'ui-design-system',
