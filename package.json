@@ -30,6 +30,7 @@
   "dependencies": {
     "@changesets/cli": "^2.27.8",
     "@chromatic-com/storybook": "^2.0.2",
+    "@jaeheesong-ktc/ui": "^0.26.0",
     "@storybook/addon-essentials": "^8.3.2",
     "@storybook/addon-interactions": "^8.3.2",
     "@storybook/addon-links": "^8.3.2",

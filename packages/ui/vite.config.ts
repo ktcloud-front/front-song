@@ -21,19 +21,19 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
-      input: Object.fromEntries(
-        globSync(['src/components/**/index.ts', 'src/index.ts']).map((file) => {
-          const entryName = path.relative(
-            'src',
-            file.slice(0, file.length - path.extname(file).length)
-          )
-          const entryUrl = fileURLToPath(new URL(file, import.meta.url))
-          return [entryName, entryUrl]
-        })
-      ),
+      // input: Object.fromEntries(
+      //   globSync(['src/components/**/index.ts', 'src/index.ts']).map((file) => {
+      //     const entryName = path.relative(
+      //       'src',
+      //       file.slice(0, file.length - path.extname(file).length)
+      //     )
+      //     const entryUrl = fileURLToPath(new URL(file, import.meta.url))
+      //     return [entryName, entryUrl]
+      //   })
+      // ),
       output: {
-        entryFileNames: '[name].js',
-        assetFileNames: 'assets/[name][extname]',
+        // entryFileNames: '[name].js',
+        // assetFileNames: 'css/[name][extname]',
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
