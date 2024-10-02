@@ -7,5 +7,5 @@ module.exports = {
     tsconfigRootDir: __dirname,
     createDefaultProgram: true,
   },
-  ignorePatterns: ['.eslintrc.cjs', 'vite.config.ts'],
+  ignorePatterns: ['.eslintrc.cjs', 'vite.config.ts', 'dist'],
 }
