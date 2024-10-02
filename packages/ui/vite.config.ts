@@ -22,7 +22,7 @@ export default defineConfig({
     rollupOptions: {
       external: ['react', 'react-dom'],
       input: Object.fromEntries(
-        globSync(['src/components/**/index.tsx', 'src/index.ts']).map((file) => {
+        globSync(['src/components/**/index.ts', 'src/index.ts']).map((file) => {
           const entryName = path.relative(
             'src',
             file.slice(0, file.length - path.extname(file).length)
@@ -41,15 +41,15 @@ export default defineConfig({
       },
     },
   },
-  css: {
-    postcss: {
-      plugins: [
-        autoprefixer, // CSS에 벤더 프리픽스 자동 추가
-        cssnano({ preset: 'default' }) // CSS를 최적화하고 압축
-      ],
-    },
-    modules: {
-      scopeBehaviour: 'global'
-    }
-  }
+  // css: {
+  //   postcss: {
+  //     plugins: [
+  //       autoprefixer, // CSS에 벤더 프리픽스 자동 추가
+  //       cssnano({ preset: 'default' }) // CSS를 최적화하고 압축
+  //     ],
+  //   },
+  //   modules: {
+  //     scopeBehaviour: 'global'
+  //   }
+  // }
 })

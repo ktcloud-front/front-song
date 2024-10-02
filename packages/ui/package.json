@@ -1,7 +1,7 @@
 {
   "name": "@jaeheesong-ktc/ui",
   "private": false,
-  "version": "0.25.0",
+  "version": "0.26.0",
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
@@ -14,8 +14,8 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
