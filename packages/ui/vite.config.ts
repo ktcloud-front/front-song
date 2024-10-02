@@ -7,12 +7,13 @@ import autoprefixer from 'autoprefixer'
 import cssnano from 'cssnano'
 import postcssNesting from 'postcss-nesting';
 import { webextensions } from 'globals'
+import commonjs from 'vite-plugin-commonjs'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), dts({insertTypesEntry: true}), tsconfigPaths()],
+  plugins: [react(), dts({insertTypesEntry: true}), tsconfigPaths(), commonjs()],
   build: {
-    cssCodeSplit: true,
+    // cssCodeSplit: true,
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'ui-design-system',
@@ -32,13 +33,12 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        postcssNesting,
         autoprefixer(), // CSS에 벤더 프리픽스 자동 추가
-        cssnano({ preset: 'default' }) // CSS를 최적화하고 압축
+        // cssnano({ preset: 'default' }) // CSS를 최적화하고 압축
       ],
     },
-    modules: {
-      scopeBehaviour: 'global'
-    }
+    // modules: {
+    //   scopeBehaviour: 'global'
+    // }
   }
 })
